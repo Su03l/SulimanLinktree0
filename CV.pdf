@@ -1,0 +1,90 @@
+from docx import Document
+
+# Create a new Document
+doc = Document()
+
+# Title
+doc.add_heading('Curriculum Vitae', 0)
+
+# Personal Information
+doc.add_heading('Personal Information', level=1)
+doc.add_paragraph(
+    '[Full Name]\n'
+    '[Phone Number] | [Email Address] | [LinkedIn Profile] | [Address (Optional)]'
+)
+
+# Professional Summary
+doc.add_heading('Professional Summary', level=1)
+doc.add_paragraph('[Brief 2-3 sentence summary of your career highlights, skills, and goals.]')
+
+# Skills
+doc.add_heading('Skills', level=1)
+doc.add_paragraph(
+    '- [Skill 1]\n'
+    '- [Skill 2]\n'
+    '- [Skill 3]\n'
+    '- [Skill 4]\n'
+    '- [Skill 5]'
+)
+
+# Experience
+doc.add_heading('Experience', level=1)
+
+# Experience 1
+doc.add_paragraph(
+    '**[Job Title]** | [Company Name] | [Start Date] – [End Date]\n'
+    '- [Responsibility/Achievement 1]\n'
+    '- [Responsibility/Achievement 2]\n'
+    '- [Responsibility/Achievement 3]\n'
+    '- [Responsibility/Achievement 4]'
+)
+
+# Experience 2
+doc.add_paragraph(
+    '**[Job Title]** | [Company Name] | [Start Date] – [End Date]\n'
+    '- [Responsibility/Achievement 1]\n'
+    '- [Responsibility/Achievement 2]\n'
+    '- [Responsibility/Achievement 3]'
+)
+
+# Education
+doc.add_heading('Education', level=1)
+doc.add_paragraph(
+    '**[Degree/Qualification]** | [School/University Name] | [Graduation Year]\n'
+    '- [Relevant Coursework or Specializations (Optional)]'
+)
+
+# Certifications
+doc.add_heading('Certifications', level=1)
+doc.add_paragraph(
+    '- **[Certification Name]** | [Issuing Organization] | [Date of Completion]\n'
+    '- **[Certification Name]** | [Issuing Organization] | [Date of Completion]'
+)
+
+# Projects
+doc.add_heading('Projects', level=1)
+doc.add_paragraph(
+    '**[Project Title]**\n'
+    'Role: [Your Role] | Technologies Used: [Tech Stack]\n'
+    '- [Short description of the project and impact.]'
+)
+
+# Languages
+doc.add_heading('Languages', level=1)
+doc.add_paragraph(
+    '- **[Language 1]** – [Proficiency Level]\n'
+    '- **[Language 2]** – [Proficiency Level]'
+)
+
+# Additional Sections
+doc.add_heading('Additional Sections', level=1)
+doc.add_paragraph(
+    '- **Awards**: [Award Name] | [Issuing Organization] | [Date]\n'
+    '- **Volunteer Experience**: [Organization] | [Role] | [Dates]'
+)
+
+# Save the document
+file_path = "/mnt/data/ATS_Friendly_CV_Template.docx"
+doc.save(file_path)
+
+file_path
