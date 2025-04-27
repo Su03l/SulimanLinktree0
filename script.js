@@ -33,3 +33,36 @@ function showToast() {
         toast.classList.remove('show');
     }, 2000);
 }
+
+<script>
+const switchToggle = document.getElementById('theme-switch');
+
+switchToggle.addEventListener('change', () => {
+    if (switchToggle.checked) {
+        // Light Theme
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        document.querySelectorAll('.link-button').forEach(btn => {
+            btn.style.backgroundColor = "black";
+            btn.style.color = "white";
+        });
+        document.querySelectorAll('.copy-icon').forEach(icon => {
+            icon.style.borderColor = "white";
+            icon.style.color = "white";
+        });
+    } else {
+        // Dark Theme
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        document.querySelectorAll('.link-button').forEach(btn => {
+            btn.style.backgroundColor = "white";
+            btn.style.color = "black";
+        });
+        document.querySelectorAll('.copy-icon').forEach(icon => {
+            icon.style.borderColor = "black";
+            icon.style.color = "black";
+        });
+    }
+});
+</script>
+
