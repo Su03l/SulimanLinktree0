@@ -34,8 +34,9 @@ function showToast() {
     }, 2000);
 }
 
-<script>
 const switchToggle = document.getElementById('theme-switch');
+const logoText = document.getElementById('logoText');
+const profileNameText = document.getElementById('profileNameText');
 
 switchToggle.addEventListener('change', () => {
     if (switchToggle.checked) {
@@ -64,5 +65,5 @@ switchToggle.addEventListener('change', () => {
         });
     }
 });
-</script>
+
 
