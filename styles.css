@@ -310,4 +310,3 @@ body {
 .switch:has(.circle:checked) > .moon {
   opacity: 0;
 }
-
