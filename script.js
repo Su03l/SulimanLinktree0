@@ -43,6 +43,9 @@ switchToggle.addEventListener('change', () => {
         // Light Theme
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
+        logoText.style.color = "black"; // Change logo text color
+        profileNameText.style.color = "black"; // Change profile name text color
+        
         document.querySelectorAll('.link-button').forEach(btn => {
             btn.style.backgroundColor = "black";
             btn.style.color = "white";
@@ -55,6 +58,9 @@ switchToggle.addEventListener('change', () => {
         // Dark Theme
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
+        logoText.style.color = "white"; // Change logo text color
+        profileNameText.style.color = "white"; // Change profile name text color
+        
         document.querySelectorAll('.link-button').forEach(btn => {
             btn.style.backgroundColor = "white";
             btn.style.color = "black";
@@ -65,5 +71,6 @@ switchToggle.addEventListener('change', () => {
         });
     }
 });
+
 
 
