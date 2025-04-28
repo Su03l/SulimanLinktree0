@@ -35,16 +35,15 @@ function showToast() {
 }
 
 const switchToggle = document.getElementById('theme-switch');
-const logoText = document.getElementById('logoText');
 const profileNameText = document.getElementById('profileNameText');
-
+const p = document.getElementById('profileNameText');
 switchToggle.addEventListener('change', () => {
     if (switchToggle.checked) {
         // Light Theme
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
-        logoText.style.color = "black"; // Change logo text color
-        profileNameText.style.color = "black"; // Change profile name text color
+       
+        profileNameText.style.color = "black"; 
         
         document.querySelectorAll('.link-button').forEach(btn => {
             btn.style.backgroundColor = "black";
@@ -58,8 +57,8 @@ switchToggle.addEventListener('change', () => {
         // Dark Theme
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
-        logoText.style.color = "white"; // Change logo text color
-        profileNameText.style.color = "white"; // Change profile name text color
+     
+        profileNameText.style.color = "white"; 
         
         document.querySelectorAll('.link-button').forEach(btn => {
             btn.style.backgroundColor = "white";
