@@ -310,3 +310,13 @@ body {
 .switch:has(.circle:checked) > .moon {
   opacity: 0;
 }
+.logo {
+  position: absolute;
+  top: 10px;   
+  left: 1px;  
+}
+
+.LogoImg {
+  width: 300px;   
+  height: auto;
+}
